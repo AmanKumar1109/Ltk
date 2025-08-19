@@ -12,7 +12,7 @@ const Home = () => {
     const [showSearch, setShowSearch] = React.useState(false)
     return (
         <div className='relative'>
-            <div className='h-[70px] w-full bg-white flex items-center justify-between px-[20px] lg:justify-evenly'>
+            <div className='h-[70px] w-full bg-white flex items-center justify-between px-[20px] lg:justify-evenly overflow-x-hidden'>
                 <div><img src={logo} alt="" /></div>
                 <div className='hidden lg:flex items-center gap-[15px]'>
                     <span className='text-[20px] font-semibold text-gray-500 hover:text-black '>Discover</span>
@@ -42,7 +42,7 @@ const Home = () => {
                     }}><IoSearch className='text-[20px] font-semibold' /></span>
 
                     <div className={`h-[30px] rounded-full border-[1px] border-gray-800 px-[20px]  py-[20px] flex items-center gap-[10px] absolute transform transition-all duration-300 z-[100] ${showSearch ? 'right-[75px]' : 'right-[-300px]'} `}>
-                        <input type="text" className=' w-[150px] border-0 outline-none ' placeholder='Search ,Fashion ,Home & more' />
+                        <input type="text" className=' w-[140px] border-0 outline-none ' placeholder='Search ,Fashion ,Home & more' />
                         <span className='cursor-pointer' onClick={() => setShowSearch(false)} ><ImCross className='text-[10px] ' /></span>
                     </div>
 
