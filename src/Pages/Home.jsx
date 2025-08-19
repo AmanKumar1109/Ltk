@@ -32,7 +32,7 @@ const Home = () => {
                         Signup
                     </button>
                 </div>
-                <div className='flex items-center gap-[10px] lg:hidden relative'>
+                <div className='flex items-center gap-[10px] lg:hidden relative overflow-hidden'>
                     <span onClick={() => {
                         if (showSearch) {
                             //sochhenge hum 
