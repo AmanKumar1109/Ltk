@@ -32,7 +32,7 @@ const Home = () => {
                         Signup
                     </button>
                 </div>
-                <div className='flex items-center gap-[10px] lg:hidden relative overflow-hidden'>
+                <div className='flex items-center gap-[10px] lg:hidden relative '>
                     <span onClick={() => {
                         if (showSearch) {
                             //sochhenge hum 
@@ -41,7 +41,7 @@ const Home = () => {
                         }
                     }}><IoSearch className='text-[20px] font-semibold' /></span>
 
-                    <div className={`h-[30px] rounded-full border-[1px] border-gray-800 px-[20px]  py-[20px] flex items-center gap-[10px] absolute transform transition-all duration-300 ${showSearch ? 'right-[75px]' : 'right-[-300px]'} `}>
+                    <div className={`h-[30px] rounded-full border-[1px] border-gray-800 px-[20px]  py-[20px] flex items-center gap-[10px] absolute transform transition-all duration-300 z-[100] ${showSearch ? 'right-[75px]' : 'right-[-300px]'} `}>
                         <input type="text" className=' w-[150px] border-0 outline-none ' placeholder='Search ,Fashion ,Home & more' />
                         <span className='cursor-pointer' onClick={() => setShowSearch(false)} ><ImCross className='text-[10px] ' /></span>
                     </div>
